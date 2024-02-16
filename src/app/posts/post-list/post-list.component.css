@@ -1,0 +1,25 @@
+/* Container für die Posts */
+div.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Zentriert die Items vertikal */
+    gap: 10px;
+     /* Setzt die Höhe des Containers auf die volle Bildschirmhöhe */
+    /* Oder eine feste Höhe, z.B.: height: 500px; */
+  }
+  
+  /* Style für app-post-item */
+  app-post-item {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 50%;
+    max-width: 30em;
+    color: black;
+    /* Eventuell zusätzliche Anpassungen hier */
+  }
+  

@@ -1,0 +1,7 @@
+<div *ngFor="let post of posts" class="item-container">
+    <app-post-item [post]="post"></app-post-item>
+  </div>
+  <div #sentinel></div>
+<div *ngIf="!finished && posts.length > 0">
+    Lade weitere Posts...
+  </div>

@@ -1,0 +1,5 @@
+mat-card-content {
+    line-break: auto;
+    word-wrap: break-word; /* Stellt sicher, dass lange Wörter umgebrochen werden /
+    overflow-wrap: break-word; / Alternative zu word-wrap */
+  }

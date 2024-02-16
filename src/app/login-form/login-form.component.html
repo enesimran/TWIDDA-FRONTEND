@@ -1,0 +1,24 @@
+<form [formGroup]="formGroup" (ngSubmit)="submit()">
+  <div class="form-container">
+  <mat-form-field appearance="fill">
+    <mat-label>E-Mail</mat-label>
+    <input matInput placeholder="E-Mail" formControlName="email" />
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Passwort</mat-label>
+    <input
+      matInput
+      placeholder="Passwort"
+      formControlName="password"
+      type="password"
+    />
+  </mat-form-field>
+  <button mat-raised-button [disabled]="!formGroup.valid" color="primary">
+    <mat-icon>login</mat-icon> Anmelden
+  </button>
+  <div style="color: black; width:100%; text-align:center; margin-top:1em">
+    <p>oder <a  style="color: rgb(0, 107, 194); cursor: pointer" (click)="authService.toggleView()" >registrieren</a></p>
+  </div>
+</div>
+</form>

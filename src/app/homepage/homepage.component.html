@@ -1,0 +1,6 @@
+<div class="control-bar">
+<button mat-raised-button *ngIf="(this.authService.isAuthenticated() | async)" (click)="logout()">Ausloggen</button>
+<label>This is TWIDDA.</label>
+<button mat-raised-button (click)="toggleCreatePostWindow()">Posten</button>
+</div>
+<app-post-list></app-post-list>
